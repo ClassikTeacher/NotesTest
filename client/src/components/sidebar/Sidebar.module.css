@@ -1,0 +1,7 @@
+.sidebarContainer{
+    position: relative;
+
+    height: 100vh;
+    width: 20%;
+    background-color: #ccc;
+}

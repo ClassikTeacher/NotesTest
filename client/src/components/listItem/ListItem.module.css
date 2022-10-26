@@ -1,0 +1,47 @@
+.itemContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.active{
+    background-color: #aaa;
+}
+
+.itemTitle{
+    font-size: 14px;
+    font-weight: 800;
+    padding-bottom: 5px;
+}
+
+.itemContent{
+    display: flex;
+    position: relative;
+    
+    max-width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.itemContent__date{
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+    width: fit-content; 
+}
+
+.itemContent__text{
+    display: inline;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    color: #777;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: fit-content;
+}
