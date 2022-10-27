@@ -1,7 +1,9 @@
 .sidebarContainer{
     position: relative;
-
-    height: 100vh;
+    height: 100%;
     width: 20%;
-    background-color: #ccc;
+    background-color: #eee;
+    border-right: 1px solid #aaa;
+    overflow-y: auto;
+    /* background-color: #ccc; */
 }

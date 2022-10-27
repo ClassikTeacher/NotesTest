@@ -6,17 +6,21 @@
     height: 50px;
     padding: 5px 10px;
     border: none;
+    cursor: pointer;
     border-bottom: 1px solid #aaa;
 }
 
 .active{
-    background-color: #aaa;
+    background-color: #bbb;
 }
 
 .itemTitle{
     font-size: 14px;
     font-weight: 800;
     padding-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: fit-content;
 }
 
 .itemContent{

@@ -1,0 +1,47 @@
+.worckSpaceContainer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.worckSpaceContainer textarea{
+    resize:  none;
+}
+
+.worckSpaceContainer__date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    color: #333;
+ 
+}
+
+.worckSpaceContainer__title{
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 22px;
+    color: #111;
+   
+}
+
+.worckSpaceContainer__title textarea{
+    min-height: 50px;
+}
+
+.worckSpaceContainer__text{
+    width: 100%;
+    min-height: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111;
+}
+
+
+.worckSpaceContainer__text textarea{
+    min-height: 450px;
+}

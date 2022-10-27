@@ -20,11 +20,16 @@ const ListItem = (props)=>{
         }
     }
 
+    function activeItem(){
+        props.setActiveItemId(props.id)
+       
+    }
+
     useEffect(()=>{
         buildDate()
     },[])
     return(
-        <div className={styles.itemContainer}>
+        <div className={`${styles.itemContainer} ${props.id === props.activeId ? styles.active : ''}`} onClick={()=>activeItem()}>
             <div className={styles.itemTitle}>
                {props.title}
             </div>
@@ -33,7 +38,7 @@ const ListItem = (props)=>{
                     {date}
                 </div>
                 <div className={styles.itemContent__text}>
-                    {props.text}
+                    {props.text !== '' ? props.text : 'No additional text'}
                 </div>
             </div>
         </div>

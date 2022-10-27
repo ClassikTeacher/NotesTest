@@ -1,21 +1,21 @@
 *{
   margin:0;
   padding: 0;
-  width: 100%;
-  /* min-height: 100%; */
   box-sizing: border-box;
 }
 
-.App {
+.App{
   position: relative;
   min-width: 100%;
-  min-height: 100%;
+  height: 100vh;
+  background-color: #eee;
 }
 
 .layout{
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 90%;
+  background-color: #eee;
 }
 .contentContainer{
   width:80%;
