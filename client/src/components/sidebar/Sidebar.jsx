@@ -10,10 +10,7 @@ const Sidebar = (props)=>{
 
     return(
         <div className={styles.sidebarContainer}>
-            <Sider
-                // breakpoint="lg"
-                // collapsedWidth="0"
-              
+            <Sider              
                 width='100%'
                 style={{background: 'none', height: '100%'}}
                 >

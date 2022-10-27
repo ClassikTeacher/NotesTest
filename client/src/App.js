@@ -27,8 +27,6 @@ function App() {
 
   const filterNotes = useFilterNotes(listNotes, query)
 
-  console.log(filterNotes)
-
   function changeActiveItem(){
     listNotes.map(item =>{
       if(item.id === activeItemId){
@@ -41,7 +39,6 @@ function App() {
   function deleteItem(){
     if(activeItemId !== null){
       setIsModalOpen(true)
-      console.log('delete')
     }
     
   }
@@ -71,7 +68,6 @@ function App() {
       }
       })
       setListNotes(newNotesList)
-    console.log(title)
   }
 
   function cteateItem(){
@@ -80,7 +76,6 @@ function App() {
     newListNotes.push({id: id, title: 'New notes', text: '', date: Date.now()})
     setActiveItemId(id)
     setListNotes(newListNotes)
-    console.log('create')
   }
 
   useEffect(()=>{
@@ -91,8 +86,6 @@ function App() {
   useEffect(()=>{
     setListNotes(Notes)
   },[])
-
-  console.log('render')
 
   return (
     <NotesContext.Provider

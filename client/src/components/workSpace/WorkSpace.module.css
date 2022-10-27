@@ -1,4 +1,6 @@
 .worckSpaceContainer{
+    position: relative;
+    overflow-y: auto;
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -30,7 +32,7 @@
 }
 
 .worckSpaceContainer__title textarea{
-    min-height: 50px;
+    height: 50px;
 }
 
 .worckSpaceContainer__text{
@@ -43,5 +45,5 @@
 
 
 .worckSpaceContainer__text textarea{
-    min-height: 450px;
+    height: 400px;
 }
